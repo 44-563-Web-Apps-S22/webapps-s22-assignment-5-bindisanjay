@@ -13,6 +13,29 @@
 
 </head>
 <body>
+
+  <nav class="navbar navbar-expand-md navbar-light and bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="birds.html">Interesting Birds</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=
+      "#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label=
+      "Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="basic.html">Basic</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="advanced.html">Advanced</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
     <h1>Birds by Sanjay Bindi</h1>
     <div class="container">
         <div class="row">
@@ -34,7 +57,171 @@
         </div>
         <br>
         The row containing bird names is breaking first as we reduce the browser size because we used
-        class col-md for birds. 
+        class col-md for birds.
+    </div>
+
+    <br> 
+
+    <div>
+      <div>
+        <img src="Bachman's sparrow.jpg" class="img-fluid" alt="Bachman's sparrow" style="width:400px;height:500px;">
+        <img src="Nightingale.jpg" class="img-fluid" alt="Nightingale" style="width:400px;height:500px;">
+        <img src="Shoveler.jpg" class="img-fluid" alt="Shoveler" style="width:400px;height:500px;">
+      </div>
+      <div>
+        <img src="Bachman's sparrow.jpg" class="img-thumbnail" alt="Bachman's sparrow" style="width:400px;height:500px;">
+        <img src="Nightingale.jpg" class="img-thumbnail" alt="Nightingale" style="width:400px;height:500px;">
+        <img src="Shoveler.jpg" class="img-thumbnail" alt="Shoveler" style="width:400px;height:500px;">
+      </div>
+    </div>
+    <br>
+    <table class="table table-sm table-bordered table-hover table-striped">
+      <caption>Athletes, Birds and Lakes starting with my Last name alphabets.</caption>
+      <thead class="table-active">
+        <tr>
+          <th scope="col">Letter</th>
+          <th scope="col">Bird</th>
+          <th scope="col">Lake</th>
+          <th scope="col">Athlete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-primary">
+          <th scope="row">B</th>
+          <td>Bachman's sparrow</td>
+          <td>Buttle Lake</td>
+          <td>Benjamin Mendy</td>
+        </tr>
+        <tr class="table-info">
+          <th scope="row">I</th>
+          <td>Iago Sparrow</td>
+          <td>Ibera Lake</td>
+          <td>Ishan Kishan</td>
+        </tr>
+        <tr class="table-danger">
+          <th scope="row">N</th>
+          <td>Nightingale</td>
+          <td>Nueltin Lake</td>
+          <td>Neymar</td>
+        </tr>
+        <tr class="table-dark">
+          <th scope="row">D</th>
+          <td>Dwarf Cassowary</td>
+          <td>Dore Lake</td>
+          <td>David Beckham</td>
+        </tr>
+        <tr class="table-success">
+          <th scope="row">I</th>
+          <td>Ifrit</td>
+          <td>Iliamna Lake</td>
+          <td>Iker Casillas</td>
+        </tr>
+        <tr class="table-light">
+          <th scope="row">S</th>
+          <td>Shoveler</td>
+          <td>	Saguaro Lake</td>
+          <td>Sreyas Iyer</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <label>Buttons:</label>
+      <br>
+
+      <button class="btn">B</button>
+      <button class="btn">I</button>
+      <button class="btn">N</button>
+      <button class="btn">D</button>
+      <button class="btn">I</button>
+      <button class="btn">S</button>
+
+      <br>
+      <label>Button Groups:</label>
+      <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        
+        <div class="btn-group " role="group" aria-label="First group">
+          <button type="button" class="btn btn-Success">B</button>
+          <button type="button" class="btn btn-Success">N</button>
+          <button type="button" class="btn btn-Success">S</button>
+        </div>
+
+        <div class="btn-group" role="group" aria-label="Second group">
+          <button type="button" class="btn btn-warning">I</button>
+          <button type="button" class="btn btn-warning">N</button> 
+        </div>
+
+        <div class="btn-group" role="group" aria-label="Third group">
+          <button type="button" class="btn btn-danger">I</button>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="basic.html">BASIC</a></li>
+          <li><a class="dropdown-item" href="advanced.html">ADVANCED</a></li>
+          
+        </ul>
+      </div>
+
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="form-group">
+          <label for="bird" class="form-label">Bird</label>
+          <input type="text" class="form-control" for="bird" placeholder="Enter your choice of bird" >
+          <div id="birdChoice" class="form-text">Enter your bird.</div>
+        </div>
+        <div class=" form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Sign up for newsletter? </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <br>
+      <div class="row">
+      <div class="card" style="width: 18rem;">
+        <img src="Bachman's sparrow.jpg" class="card-img-top" alt="Bachman's sparrow">
+        <div class="card-body">
+          <h5 class="card-title">Bachman's sparrow</h5>
+          <p class="card-text">Bachman's sparrow (Peucaea aestivalis) (also known as the "Pinewoods
+            Sparrow" or "Oakwoods Sparrow") is a small American sparrow that is endemic to the
+            southeastern United States. This species was named in honor of Reverend John Bachman.
+          </p>
+          <a href="https://en.wikipedia.org/wiki/Bachman%27s_sparrow" class="btn btn-info">About</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+      <img src="Nightingale.jpg" class="card-img-top" alt="Nightingale image">
+        <div class="card-body">
+          <h5 class="card-title">Nightingale</h5>
+          <p class="card-text">The common nightingale, rufous nightingale or simply nightingale 
+            (Luscinia megarhynchos), is a small passerine bird best known for its powerful and beautiful
+             song. It was formerly classed as a member of the thrush family Turdidae, but is now more 
+             generally considered to be an Old World flycatcher, Muscicapidae. It belongs to a group 
+             of more terrestrial species, often called chats.
+          </p>
+          <a href="https://en.wikipedia.org/wiki/Common_nightingale" class="btn btn-info">About</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="Shoveler.jpg" class="card-img-top" alt="Shoveler image">
+        <div class="card-body">
+          <h5 class="card-title">Shoveler</h5>
+          <p class="card-text">The shovelers or shovellers are four species of dabbling ducks with long, broad spatula-shaped beaks.
+          </p>
+          <a href="https://en.wikipedia.org/wiki/Shoveler" class="btn btn-info">About</a>
+        </div>
+      </div>
+      </div>
+
 
 </body>
 </html>
